@@ -14,10 +14,6 @@ const questions = [{
     name: 'description'
 }, {
     type: 'input',
-    message: 'What sections would you like to include in your Table of Contents?',
-    name: 'tableContents'
-}, {
-    type: 'input',
     message: 'Please provide brief installation instructions...',
     name: 'installation'
 }, {
@@ -38,7 +34,24 @@ const questions = [{
       "Apache",
       "Boost",
     ],
-}, 
+}, {
+    type: 'input',
+    message: 'How can someone contribute to this project?',
+    name: 'contribute'
+}, {
+    type: 'input',
+    message: 'How can someone test this product?',
+    name: 'test'
+}, {
+    type: 'input',
+    message: 'What is your GitHub username?',
+    name: 'username'
+}, {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email'
+},
+
 ];
 
 // TODO: Create a function to write README file
@@ -52,9 +65,8 @@ function init() {
     inquirer
     .prompt(questions)
     .then((data) => {
-        //const markdownContent = generateMarkdown(data);
-
-    writeToFile();
+        readmeContent = generateMarkdown(data);
+        writeToFile('README.md', readmeContent);
     });
 }
 
