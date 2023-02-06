@@ -123,5 +123,6 @@ You are required to submit the following for review:
 ## Links/Submissions
 
 [Link to GitHub Repositorty for README Generator](https://github.com/jrwesch/readme-generator) <br> 
+[Link to Video of application walkthrough](https://drive.google.com/file/d/1xO3gGyUGOMxCAspu1MAjruqFLgYYGkmA/view?usp=share_link)
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
